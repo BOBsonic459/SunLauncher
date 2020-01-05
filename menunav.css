@@ -1,0 +1,44 @@
+iframe {
+    width: 100%
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-right: 1000px
+    padding: 10px;
+}
+    
+    nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: #00E6FF;
+}
+    
+nav li {
+    display:inline-block;
+    margin: 0px
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px
+    /*	background-color: red;*/
+}
+    
+nav li a {
+    display:block;
+    text-decoration: none;
+    color: #FFFFFF
+}
+    
+nav li :hover{
+    background-color: #1EA3E0;
+    color: #00E6FF;
+}
+    
+a {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: #00E6FF;
+    text-decoration: none;
+    color: #1EA3E0;
+}

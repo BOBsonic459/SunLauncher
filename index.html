@@ -5,15 +5,32 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="menunav.css">
+    <title>SunLauncher</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+
+    <center><h1>Bienvenue sur SunLauncher [Bêta-0.0.1]</h1></center>
+    <nav>
+        <ul>
+            <li><a href="#">Acceuille</a></li>
+            <li><a href="app.html">Projet & Application</a></li>
+            <li><a href="info.html">à propos</a></li>
+            <li><a href="https://sunproject.ddns.net:4443">GitLab | SunServeur</a></li>
+            <li><a href="https://sunproject.ddns.net:443/nextcloud">NextCloud | SunServeur</a></li>
+        </ul>
+    </nav>
+
+    <button id="app-close" type="button">Fermer l'application</button>
 
     <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+    <script src="./renderer.js">
+        
+        window.$ = window.jQuery = require('jquery')
+
+    </script>
+
+</body>
 </html>
